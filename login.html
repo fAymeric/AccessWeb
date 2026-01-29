@@ -12,8 +12,14 @@
 
   <header>
     <h1>Mon Blog</h1>
-    <p>Bienvenue sur mon blog dédié au développement web</p>
+    <p>Bienvenue sur mon blog dédié aux animaux (normalement) mignons</p>
   </header>
+
+  <nav aria-label="Navigation principale">
+    <ul>
+      <li><a href="login.html" aria-current="page">Connexion</a></li>
+    </ul>
+  </nav>
 
   <main id="main-content">
     <h2 class="sr-only">Formulaire de connexion</h2>
@@ -45,7 +51,7 @@
         >
         <span id="password-hint" class="sr-only">Entrez votre mot de passe (minimum 8 caractères)</span>
 
-        <a href="index.html" class="btn">Se connecter</a>
+        <button type="submit">Se connecter</button>
       </fieldset>
     </form>
   </main>
