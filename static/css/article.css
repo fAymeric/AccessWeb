@@ -168,46 +168,72 @@ figcaption {
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: var(--spacing-md) 0;
-  background-color: var(--color-surface);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    margin: var(--spacing-lg) 0;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
 }
 
 caption {
-  padding: var(--spacing-sm);
-  font-weight: 700;
-  font-size: 1.125rem;
-  text-align: left;
-  caption-side: top;
+    padding: var(--spacing-sm);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    text-align: left;
+    caption-side: top;
+    color: #1e293b;
 }
 
 thead {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-th,
-td {
-  padding: var(--spacing-sm);
-  text-align: left;
-  border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-primary);
+    color: #ffffff;
 }
 
 th {
-  font-weight: 600;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--color-primary-hover);
+}
+
+td {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border); 
+    color: var(--color-text);
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
 }
 
 tbody tr:hover {
-  background-color: var(--color-background);
+    background-color: rgba(37, 99, 235, 0.05);
 }
 
 tfoot {
-  background-color: var(--color-background);
-  font-weight: 600;
+    background-color: var(--color-background);
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-text-muted);
+}
+
+tfoot td {
+    border-top: 2px solid var(--color-border);
 }
 
 .commentaires {
