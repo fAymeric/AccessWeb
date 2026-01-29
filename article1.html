@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1 - Le capybara</title>
+    <link rel="stylesheet" href="static/css/article.css">
+</head>
+<body>
+
+<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+<header>
+    <h1>Mon Blog</h1>
+    <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="login.html">Connexion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="contenu">
+
+    <article>
+        <h2>Le cabiai (capybara)</h2>
+
+        <p>
+            Le cabiai, plus connu sous le nom de capybara (<em>Hydrochoerus hydrochaeris</em>),
+            est un rongeur sud-americain appartenant au groupe des hystricognathes.
+            C'est le plus grand rongeur vivant au monde.
+        </p>
+
+        <figure>
+            <img src="/static/images/article1/capybara1.jpg" alt="Capybara adore">
+        </figure>
+
+        <h3>Un geant parmi les rongeurs</h3>
+
+        <p>
+            A l'age adulte, le capybara peut depasser un metre de longueur pour un poids
+            moyen de 35 a 65 kg. Son corps massif est recouvert de poils reches brunatres.
+        </p>
+
+        <p>
+            Il possede une tete large, de petites oreilles, des yeux places haut
+            et ne dispose pas de queue. Ses pattes partiellement palmees lui permettent
+            de nager avec aisance et de se deplacer efficacement dans la boue.
+        </p>
+
+        <figure>
+            <img src="/static/images/article1/capybara3.jpg" alt="Capybara debout qui regarde l'appareil photo">
+        </figure>
+
+        <h3>Un mode de vie semi-aquatique</h3>
+
+        <p>
+            Le cabiai vit toujours a proximite de l'eau : rivieres, marais et lacs.
+            Excellent nageur, il se refugie dans l'eau lorsqu'il se sent menace et
+            utilise ce milieu pour reguler sa temperature.
+        </p>
+
+        <p>
+            Son alimentation est strictement herbivore : plantes aquatiques, graminees,
+            roseaux et parfois feuilles et fruits.
+        </p>
+
+        <figure>
+            <img src="/static/images/article1/capybara2.jpg" alt="Photo de la tete d'un capybara qui nous regarde">
+        </figure>
+
+        <h3>Une organisation sociale remarquable</h3>
+
+        <p>
+            Le capybara vit en groupes hierarchises. Un male dominant assure la cohesion,
+            tandis que les jeunes sont proteges par les adultes.
+        </p>
+
+        <p>
+            Il est frequent qu'une femelle allaite des petits qui ne sont pas les siens,
+            ce qui renforce la survie du groupe.
+        </p>
+
+        <figure>
+            <img src="/static/images/article1/capybara5.jpg" alt="Capybara dans l'eau avec des oranges">
+        </figure>
+
+        <h3>Relations avec l'etre humain</h3>
+
+        <p>
+            Le capybara est chasse depuis longtemps pour sa viande, mais il est aussi
+            apprecie pour son caractere calme et sociable. Dans certaines zones urbaines,
+            il peut devenir envahissant.
+        </p>
+
+        <figure>
+            <img src="/static/images/article1/capybara4.jpg" alt="Capybara mignon qui fait dodo">
+        </figure>
+    </article>
+
+    <section class="commentaires" id="commentaires" aria-labelledby="titre-commentaires">
+        <h2 id="titre-commentaires">Commentaires</h2>
+
+        <div class="commentaire">
+            <p class="commentaire-auteur">Alice</p>
+            <p class="commentaire-texte">Super article, tres clair !</p>
+        </div>
+
+        <div class="commentaire">
+            <p class="commentaire-auteur">Lucas</p>
+            <p class="commentaire-texte">Merci pour l'explication !</p>
+        </div>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="commentaire">Votre commentaire</label>
+                <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Ecrivez votre commentaire..."></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Mon Blog. Tous droits reserves.</p>
+    <p><a href="index.html">Retour a l'accueil</a></p>
+</footer>
+
+</body>
+</html>

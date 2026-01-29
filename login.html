@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page de connexion - Mon Blog">
+  <title>Connexion - Mon Blog</title>
+  <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+  <header>
+    <h1>Mon Blog</h1>
+    <p>Bienvenue sur mon blog dédié au développement web</p>
+  </header>
+
+  <main id="main-content">
+    <h2 class="sr-only">Formulaire de connexion</h2>
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Connexion à votre compte</legend>
+
+        <label for="email">Adresse email</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          autocomplete="email"
+          placeholder="exemple@email.com"
+          aria-describedby="email-hint"
+        >
+        <span id="email-hint" class="sr-only">Entrez votre adresse email utilisée lors de l'inscription</span>
+
+        <label for="password">Mot de passe</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          required 
+          autocomplete="current-password"
+          minlength="8"
+          aria-describedby="password-hint"
+        >
+        <span id="password-hint" class="sr-only">Entrez votre mot de passe (minimum 8 caractères)</span>
+
+        <a href="index.html" class="btn">Se connecter</a>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mon Blog. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
