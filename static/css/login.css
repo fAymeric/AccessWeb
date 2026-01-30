@@ -82,6 +82,23 @@ header p {
   color: var(--color-text-muted);
 }
 
+.header-main {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: var(--spacing-sm);  
+  margin-bottom: var(--spacing-md);
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+header h1 {
+  margin-bottom: 0 !important; 
+}
+
 nav ul {
   list-style: none;
   display: flex;

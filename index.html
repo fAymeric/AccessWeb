@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mon Blog - Découvrez mes derniers articles sur les animaux fascinants">
+  <meta name="description" content="Mon Blog - Découvrez mes derniers articles sur les animaux fascinants : Capybaras, Pikas, Chats Roux, Tardigrades et Axolotls.">
   <title>Page articles - Mon Blog</title>
   <link rel="stylesheet" href="static/css/index.css">
 </head>
@@ -15,71 +15,102 @@
   </nav>  
 
   <header>
-    <h1>Page articles</h1>
-    <p>Bienvenue sur mon blog dédié aux animaux (normalement) mignons</p>
-    <nav aria-label="Navigation principale">
-    <ul>
-      <li><a href="index.html" aria-current="page">Accueil</a></li>
-      <li><a href="login.html">Connexion</a></li>
-    </ul>
-  </nav>
+      <div class="header-main">
+        <img src="static/images/logo.jpg" alt="" aria-hidden="true" class="logo-img">
+        <h1>Page d'accueil</h1>
+      </div>
+      
+      <p>Bienvenue sur mon blog dédié aux animaux (normalement) mignons</p>
+  
+      <nav aria-label="Navigation principale">
+        <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="login.html">Connexion</a></li>
+      </ul>
+      </nav>
   </header>
 
-  
-
   <main id="main-content">
-    <h2 class="sr-only">Liste des articles</h2>
-    <ul>
-      <li>
-        <div class="article-card">
-          <img src="static/images/article1/capybaraIndex.jpg" alt="" class="article-thumb">
-          <div class="article-content">
+    <h2 class="sr-only">Liste des articles récents</h2>
+    
+    <section class="articles-container" aria-label="Galerie des articles">
+      
+      <article class="article-card" aria-labelledby="title-art1">
+        <img src="static/images/article1/capybaraIndex.jpg" alt="Un capybara zen se reposant au bord de l'eau" class="article-thumb">
+        <div class="article-content">
+          <h3 id="title-art1">
             <a href="article1.html" class="article-title">Les Capybaras : Les géants zen</a>
-            <a href="article1.html#commentaires" class="comment-link">Voir les commentaires sur les capybaras</a>
-          </div>
+          </h3>
+          <p class="article-excerpt">
+            Découvrez le quotidien du plus grand rongeur du monde, une force tranquille originaire d'Amérique du Sud, célèbre pour son tempérament sociable.
+          </p>
+          <a href="article1.html#commentaires" class="comment-link" aria-label="Voir les commentaires sur les capybaras">
+            Commentaires
+          </a>
         </div>
-      </li>
+      </article>
 
-      <li>
-        <div class="article-card">
-          <img src="static/images/article2/pikaIndex.jpg" alt="" class="article-thumb">
-          <div class="article-content">
+      <article class="article-card" aria-labelledby="title-art2">
+        <img src="static/images/article2/pikaIndex.jpg" alt="Un petit pika siffleur sur un rocher de montagne" class="article-thumb">
+        <div class="article-content">
+          <h3 id="title-art2">
             <a href="article2.html" class="article-title">Les Pikas : Les lièvres siffleurs</a>
-            <a href="article2.html#commentaires" class="comment-link">Voir les commentaires sur les pikas</a>
-          </div>
+          </h3>
+          <p class="article-excerpt">
+            Ne vous fiez pas à leur petite taille ! Ces cousins des lapins sont de véritables ingénieurs de la montagne avec un cri d'alarme unique.
+          </p>
+          <a href="article2.html#commentaires" class="comment-link" aria-label="Voir les commentaires sur les pikas">
+            Commentaires
+          </a>
         </div>
-      </li>
+      </article>
 
-      <li>
-        <div class="article-card">
-          <img src="static/images/article3/chatRouxIndex.jpg" alt="" class="article-thumb">
-          <div class="article-content">
+      <article class="article-card" aria-labelledby="title-art3">
+        <img src="static/images/article3/chatRouxIndex.jpg" alt="Portrait d'un chat orange à l'air espiègle" class="article-thumb">
+        <div class="article-content">
+          <h3 id="title-art3">
             <a href="article3.html" class="article-title">Les Chats Roux : Génétique et maladresse</a>
-            <a href="article3.html#commentaires" class="comment-link">Voir les commentaires sur les chats roux</a>
-          </div>
+          </h3>
+          <p class="article-excerpt">
+            Pourquoi 80% des chats oranges sont-ils des mâles ? Plongée dans la génétique du gène O et les légendes sur leur caractère intrépide.
+          </p>
+          <a href="article3.html#commentaires" class="comment-link" aria-label="Voir les commentaires sur les chats roux">
+            Commentaires
+          </a>
         </div>
-      </li>
+      </article>
 
-      <li>
-        <div class="article-card">
-          <img src="static/images/article4/TardigradeIndex.jpg" alt="" class="article-thumb">
-          <div class="article-content">
+      <article class="article-card" aria-labelledby="title-art4">
+        <img src="static/images/article4/TardigradeIndex.jpg" alt="Vue microscopique d'un tardigrade, l'ourson d'eau" class="article-thumb">
+        <div class="article-content">
+          <h3 id="title-art4">
             <a href="article4.html" class="article-title">Les Tardigrades : Les indestructibles</a>
-            <a href="article4.html#commentaires" class="comment-link">Voir les commentaires sur les tardigrades</a>
-          </div>
+          </h3>
+          <p class="article-excerpt">
+            Capables de survivre au vide spatial et aux températures extrêmes, ces créatures microscopiques sont les champions ultimes de la survie.
+          </p>
+          <a href="article4.html#commentaires" class="comment-link" aria-label="Voir les commentaires sur les tardigrades">
+            Commentaires
+          </a>
         </div>
-      </li>
+      </article>
 
-      <li>
-        <div class="article-card">
-          <img src="static/images/article5/AxolotlIndex.jpg" alt="" class="article-thumb">
-          <div class="article-content">
+      <article class="article-card" aria-labelledby="title-art5">
+        <img src="static/images/article5/AxolotlIndex.jpg" alt="Un axolotl rose souriant dans son aquarium" class="article-thumb">
+        <div class="article-content">
+          <h3 id="title-art5">
             <a href="article5.html" class="article-title">L'Axolotl : Le Peter Pan mexicain</a>
-            <a href="article5.html#commentaires" class="comment-link">Voir les commentaires sur les axolotls</a>
-          </div>
+          </h3>
+          <p class="article-excerpt">
+            Ce salamandre qui refuse de grandir possède un pouvoir de régénération incroyable qui passionne les chercheurs du monde entier.
+          </p>
+          <a href="article5.html#commentaires" class="comment-link" aria-label="Voir les commentaires sur les axolotls">
+            Commentaires
+          </a>
         </div>
-      </li>
-    </ul>
+      </article>
+
+    </section>
   </main>
 
   <footer>
