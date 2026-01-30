@@ -88,6 +88,7 @@ header p {
   justify-content: center; 
   gap: var(--spacing-sm);  
   margin-bottom: var(--spacing-md);
+  line-height: 1;
 }
 
 .logo-img {
@@ -97,6 +98,13 @@ header p {
 }
 header h1 {
   margin-bottom: 0 !important; 
+}
+
+.site-name {
+  font-size: 1.5rem; 
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.025em; 
 }
 
 nav ul {
@@ -138,6 +146,17 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: var(--spacing-xl) var(--spacing-md);
+}
+main h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+.login-form h1 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
 }
 
 form {
@@ -228,6 +247,27 @@ footer {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.login-card {
+    background: var(--color-surface);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: 400px;
+}
+
+.field-hint {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-top: 4px;
 }
 
 @media (max-width: 600px) {

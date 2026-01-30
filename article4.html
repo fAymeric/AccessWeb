@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Tardigrade - Mon Blog</title>
+    <meta name="description" content="Découvrez le tardigrade, l'ourson d'eau capable de survivre au vide spatial, aux radiations extrêmes et aux températures les plus hostiles.">
+    <title>Le Tardigrade : l'indestructible ourson d'eau - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
+
 <nav aria-label="Navigation Rapide">
     <ul>
-      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+      <li><a href="#main-title" class="skip-link">Aller au contenu principal</a></li>
     </ul>
 </nav>  
 
 <header>
     <div class="header-main">
         <img src="static/images/logo.jpg" alt="" aria-hidden="true" class="logo-img">
-        <h1>Le Tardigrade</h1>
+        <span class="site-name">Animalis</span>
     </div>
     <nav aria-label="Navigation principale">
         <ul>
@@ -26,11 +28,11 @@
     </nav>
 </header>
 
-
-<main id="contenu">
-
+<main id="contenu-principal">
+    <h1 id="main-title">Le Tardigrade</h1>
+    
     <article id="main-content">
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p>
             Le tardigrade, surnommé "ourson d'eau" en raison de sa démarche lente et de son corps potelé, 
             est un animal microscopique polyextrémophile. Capable de survivre dans les conditions les plus 
@@ -38,17 +40,18 @@
         </p>
 
         <figure>
-            <img src="static/images/article4/tardigrade1.jpg" alt="Vue au microscope d'un tardigrade">
+            <img src="static/images/article4/tardigrade1.jpg" alt="Photographie en gros plan d'un tardigrade translucide montrant ses huit pattes.">
             <figcaption class="sr-only">Photographie d'un tardigrade observée au microscope électronique à balayage.</figcaption>
         </figure>
 
-        <h3>Un champion de la survie</h3>
-
+        <h2>Un champion de la survie</h2>
         <p>
             Malgré sa petite taille (généralement moins de 1 mm), le tardigrade possède huit pattes 
             griffues et un système biologique capable d'entrer en "cryptobiose". Dans cet état de 
             dormance profonde, il remplace l'eau de ses cellules par un sucre protecteur.
         </p>
+
+        
 
         <table>
             <caption>Limites de survie du Tardigrade</caption>
@@ -83,8 +86,7 @@
             </tbody>
         </table>
 
-        <h3>Où le trouver ?</h3>
-
+        <h2>Où le trouver ?</h2>
         <p>
             Les tardigrades sont partout : des sédiments abyssaux aux sommets de l'Himalaya. 
             Il suffit souvent d'un peu de mousse humide dans votre jardin pour en débusquer 
@@ -92,18 +94,16 @@
         </p>
 
         <figure>
-            <img src="static/images/article4/tardigrade2.jpg" alt="Mousse humide sur un rocher">
+            <img src="static/images/article4/tardigrade2.jpg" alt="Mousse verte épaisse sur un rocher humide en forêt.">
             <figcaption class="sr-only">La mousse de forêt est l'un des habitats privilégiés des oursons d'eau.</figcaption>
         </figure>
 
-        <h3>Un espoir pour la médecine</h3>
-
+        <h2>Un espoir pour la médecine</h2>
         <p>
             L'étude de leurs protéines protectrices pourrait révolutionner la conservation des vaccins 
             ou la protection des cellules humaines contre les radiations lors de futurs voyages 
-            interpolares vers Mars.
+            interstellaires vers Mars.
         </p>
-
     </article>
 
     <section class="commentaires" id="commentaires" aria-labelledby="titre-commentaires">
@@ -117,28 +117,27 @@
 
         <div class="commentaire">
             <p class="commentaire-auteur">Clément</p>
-            <time datetime="2026-01-25" class="commentaire-date">25 septembre 2025</time>
-            <p class="commentaire-texte">Heureusement ma belle mère n'est pas un tardigrade</p>
+            <time datetime="2025-09-25" class="commentaire-date">25 septembre 2025</time>
+            <p class="commentaire-texte">Heureusement ma belle-mère n'est pas un tardigrade.</p>
         </div>
 
         <form>
             <div class="form-group">
                 <label for="nom">Votre nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="nom" required autocomplete="name">
             </div>
             <div class="form-group">
-                <label for="commentaire">Votre commentaire :</label>
-                <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
+                <label for="commentaire-input">Votre commentaire :</label>
+                <textarea id="commentaire-input" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
             <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
-
 </main>
 
 <footer>
-    <p>&copy; 2026 Mon Blog. Tous droits reserves.</p>
-    <p><a href="index.html">Retour a l'accueil</a></p>
+    <p>&copy; 2026 Mon Blog. Tous droits réservés.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
 </footer>
 
 </body>

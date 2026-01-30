@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Axolotl - Mon Blog</title>
+    <meta name="description" content="L'axolotl : découvrez ses incroyables capacités de régénération sans cicatrice, ses variétés de couleurs et les défis de son habitat naturel au Mexique.">
+    <title>L'Axolotl : le génie de la régénération - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
+
 <nav aria-label="Navigation Rapide">
     <ul>
-      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+      <li><a href="#main-title" class="skip-link">Aller au contenu principal</a></li>
     </ul>
 </nav>  
 
 <header>
     <div class="header-main">
         <img src="static/images/logo.jpg" alt="" aria-hidden="true" class="logo-img">
-        <h1>L'Axolotl</h1>
+        <span class="site-name">Animalis</span>
     </div>
     <nav aria-label="Navigation principale">
         <ul>
@@ -26,10 +28,11 @@
     </nav>
 </header>
 
-<main id="contenu">
-
-    <article>
-        <h3>Introduction</h3>
+<main id="contenu-principal">
+    <h1 id="main-title">L'Axolotl</h1>
+    
+    <article id="main-content">
+        <h2>Introduction</h2>
         <p>
             L'axolotl (<em>Ambystoma mexicanum</em>) est l'un des organismes les plus fascinants du règne animal. 
             Vénéré par les Aztèques, il est aujourd'hui une pièce maîtresse de la recherche médicale mondiale 
@@ -37,17 +40,22 @@
         </p>
 
         <figure>
-            <img src="static/images/article5/axolotl.png" alt="Gros plan sur l'anatomie d'un axolotl montrant ses branchies">
+            <img src="static/images/article5/axolotl.png" alt="Axolotl rose (leucistique) flottant dans l'eau, laissant voir ses branchies plumeuses rouges de chaque côté de sa tête.">
             <figcaption class="sr-only">Détail des branchies externes de l'axolotl.</figcaption>
         </figure>
 
-        <h3>1. Un pouvoir de régénération sans cicatrice</h3>
+        <h2>1. Un pouvoir de régénération sans cicatrice</h2>
         <p>
             L'axolotl ne se contente pas de remplacer ses membres. Il est capable de régénérer des tissus 
             complexes tels que la <strong>rétine</strong>, le <strong>cœur</strong> et même des portions du 
             <strong>système nerveux central</strong> sans formation de tissu cicatriciel (fibrose), un processus 
             appelé épimorphose.
         </p>
+
+        
+
+[Image of axolotl limb regeneration stages]
+
 
         <table>
             <caption>Tableau des capacités de régénération</caption>
@@ -82,29 +90,29 @@
             </tbody>
         </table>
 
-        <h3>2. Variété des morphes (Couleurs)</h3>
+        <h2>2. Variété des morphes (Couleurs)</h2>
         <p>
             Grâce à la génétique, l'axolotl présente une grande diversité de couleurs. En captivité, 
             certains spécimens sont même devenus fluorescents grâce à l'insertion d'une protéine de méduse (GFP).
         </p>
 
         <figure>
-            <img src="static/images/article5/axolotl2.jpg" alt="Différentes couleurs d'axolotls : sauvage, leucistique et albinos">
+            <img src="static/images/article5/axolotl2.jpg" alt="Trois axolotls de couleurs différentes : un gris foncé (sauvage), un rose pâle (leucistique) et un jaune (albinos).">
             <figcaption class="sr-only">Les différentes variations chromatiques observées en captivité.</figcaption>
         </figure>
 
-        <h3>3. L'habitat critique de Xochimilco</h3>
+        <h2>3. L'habitat critique de Xochimilco</h2>
         <p>
             Originaire du lac Xochimilco au Mexique, l'axolotl vit dans un réseau de canaux menacé. 
             La dégradation de son habitat est un enjeu écologique majeur.
         </p>
 
         <figure>
-            <img src="static/images/article5/axolotl3.jpg" alt="Canaux de Xochimilco au Mexique, habitat naturel de l'axolotl">
+            <img src="static/images/article5/axolotl3.jpg" alt="Vue panoramique des canaux étroits de Xochimilco bordés de végétation dense sous un ciel nuageux.">
             <figcaption class="sr-only">Vue des canaux de Xochimilco, l'habitat naturel de l'espèce.</figcaption>
         </figure>
 
-        <h3>4. Synthèse documentaire : Fiche d'identité</h3>
+        <h2>4. Synthèse documentaire : Fiche d'identité</h2>
         <ul>
             <li><strong>Nom scientifique :</strong> Ambystoma mexicanum</li>
             <li><strong>Espérance de vie :</strong> 10 à 15 ans</li>
@@ -115,16 +123,19 @@
 
     <section class="commentaires" id="commentaires" aria-labelledby="titre-commentaires">
         <h2 id="titre-commentaires">Commentaires (3)</h2>
+        
         <div class="commentaire">
             <p class="commentaire-auteur">Biologiste_92</p>
             <time datetime="2026-01-29" class="commentaire-date">29 janvier 2026</time>
             <p class="commentaire-texte">Les photos des morphes sont superbes, on voit bien la différence !</p>
         </div>
+        
         <div class="commentaire">
             <p class="commentaire-auteur">NatureLovers</p>
             <time datetime="2026-01-29" class="commentaire-date">29 janvier 2026</time>
             <p class="commentaire-texte">Xochimilco a l'air tellement pollué sur les photos, c'est triste pour eux.</p>
         </div>
+        
         <div class="commentaire">
             <p class="commentaire-auteur">In_Tech</p>
             <time datetime="2026-01-29" class="commentaire-date">29 janvier 2026</time>
@@ -134,11 +145,11 @@
         <form>
             <div class="form-group">
                 <label for="nom">Votre nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="nom" required autocomplete="name">
             </div>
             <div class="form-group">
-                <label for="commentaire">Votre commentaire :</label>
-                <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
+                <label for="commentaire-input">Votre commentaire :</label>
+                <textarea id="commentaire-input" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
             <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
@@ -147,8 +158,8 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 Mon Blog. Tous droits reserves.</p>
-    <p><a href="index.html">Retour a l'accueil</a></p>
+    <p>&copy; 2026 Mon Blog. Tous droits réservés.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
 </footer>
 
 </body>

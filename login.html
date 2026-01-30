@@ -3,73 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Connectez-vous à votre compte sur Mon Blog pour gérer vos articles et commentaires.">
-  <title>Connexion - Mon Blog</title>
-  <link rel="stylesheet" href="static/css/login.css">
+  <meta name="description" content="Connectez-vous à votre compte Animalis pour gérer vos articles et vos préférences.">
+  <title>Connexion - Animalis</title>
+  <link rel="stylesheet" href="static/css/article.css"> <link rel="stylesheet" href="static/css/login.css">
 </head>
 <body>
   
-  <nav aria-label="Navigation Rapide">
+  <nav aria-label="Navigation rapide">
     <ul>
-      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+      <li><a href="#main-login-title" class="skip-link">Aller au formulaire de connexion</a></li>
     </ul>
   </nav>  
 
-    <header>
-      <div class="header-main">
+  <header>
+    <div class="header-main">
         <img src="static/images/logo.jpg" alt="" aria-hidden="true" class="logo-img">
-        <h1>Connexion au compte</h1>
-      </div>
-  
-      <nav aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="login.html" aria-current="page">Connexion</a></li>
-        </ul>
-      </nav>
-    </header>
+        <span class="site-name">Animalis</span>
+    </div>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="login.html" aria-current="page">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main id="main-content">
     <div class="login-container">
-      <h2 class="sr-only">Formulaire de connexion</h2>
-      
-      <form action="index.html" method="get" class="login-form">
+      <section class="login-card" aria-labelledby="main-login-title">
         
-        <div class="form-group">
-          <label for="email">Adresse email</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            required 
-            autocomplete="username"
-            placeholder="exemple@email.com"
-            aria-describedby="email-hint"
-          >
-          <p id="email-hint" class="hint-text sr-only">Entrez l'adresse utilisée lors de votre inscription.</p>
-        </div>
+        <form action="index.html" method="post" class="login-form">
+          <h1 id="main-login-title">Connexion au compte</h1>
+          
+          <div class="form-group">
+            <label for="email">Adresse email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              aria-required="true"
+              autocomplete="username"
+              placeholder="exemple@email.com"
+              aria-describedby="email-hint"
+            >
+            <p id="email-hint" class="field-hint">Utilisez l'adresse liée à votre compte Animalis.</p>
+          </div>
 
-        <div class="form-group">
-          <label for="password">Mot de passe</label>
-          <input 
-            type="password" 
-            id="password" 
-            name="password" 
-            required 
-            autocomplete="current-password"
-            minlength="8"
-            aria-describedby="password-hint"
-          >
-          <p id="password-hint" class="hint-text sr-only">Minimum 8 caractères requis.</p>
-        </div>
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              required 
+              aria-required="true"
+              autocomplete="current-password"
+              minlength="8"
+              aria-describedby="password-hint"
+            >
+            <p id="password-hint" class="field-hint">Le mot de passe doit contenir au moins 8 caractères.</p>
+          </div>
 
-        <button type="submit" class="btn">Se connecter</button>
-      </form>
+          <div class="form-actions">
+            <button type="submit" class="btn">Se connecter</button>
+          </div>
+        </form>
+      </section>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Mon Blog. Tous droits réservés.</p>
+    <p>&copy; 2026 Animalis. Tous droits réservés.</p>
     <p><a href="index.html">Retour à l'accueil</a></p>
   </footer>
 

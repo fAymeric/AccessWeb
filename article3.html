@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tout savoir sur les chats oranges : les secrets de leur génétique liée au chromosome X, leur caractère unique et leur place dans la culture populaire.">
     <title>Les chats oranges : génétique et anecdotes - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
@@ -10,14 +11,14 @@
 
 <nav aria-label="Navigation Rapide">
     <ul>
-      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+      <li><a href="#main-title" class="skip-link">Aller au contenu principal</a></li>
     </ul>
 </nav>  
 
 <header>
     <div class="header-main">
         <img src="static/images/logo.jpg" alt="" aria-hidden="true" class="logo-img">
-        <h1>Les chats oranges : génétique et anecdotes</h1>
+        <span class="site-name">Animalis</span>
     </div>
     <nav aria-label="Navigation principale">
         <ul>
@@ -28,9 +29,10 @@
 </header>
 
 <main id="contenu-principal">
-
+    <h1 id="main-title">Les chats oranges : génétique et anecdotes</h1>
+    
     <article id="main-content">
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p>
             Les chats oranges, aussi appelés « ginger » ou « red », sont célèbres pour leur pelage flamboyant 
             et leur caractère souvent excentrique. Leur couleur est codée par le gène <strong>O</strong> 
@@ -38,11 +40,11 @@
         </p>
 
         <figure>
-            <img src="static/images/article3/chat1.jpg" alt="Chat orange assis sur un canapé">
+            <img src="static/images/article3/chat1.jpg" alt="Un chat orange tigré (tabby) assis fièrement sur un canapé gris.">
             <figcaption class="sr-only">Un chat orange domestique affichant son pelage roux caractéristique.</figcaption>
         </figure>
 
-        <h3>Fiche technique et Génétique</h3>
+        <h2>Fiche technique et Génétique</h2>
         <p>
             Le gène O produit de la phaeomélanine (pigment roux). Voici les données clés qui expliquent 
             pourquoi ces félins sont si particuliers :
@@ -83,7 +85,7 @@
 
         
 
-        <h3>Comportement et personnalité</h3>
+        <h2>Comportement et personnalité</h2>
         <p>
             Les chats oranges sont célèbres pour leur caractère souvent décrit comme maladroit ou "débile" sur Internet. 
             Ils sont connus pour :
@@ -95,18 +97,18 @@
         </ul>
 
         <figure>
-            <img src="static/images/article3/chat5.jpg" alt="Chat orange dans une situation maladroite">
+            <img src="static/images/article3/chat5.jpg" alt="Chat roux maladroit essayant de tenir en équilibre sur une porte ouverte.">
             <figcaption class="sr-only">Les chats oranges sont souvent les vedettes de vidéos virales pour leur maladresse légendaire.</figcaption>
         </figure>
 
-        <h3>Génétique et reproduction</h3>
+        <h2>Génétique et reproduction</h2>
         <p>
             Le gène <strong>O</strong> est lié au sexe. Un mâle (XY) n’a besoin que d’un allèle O pour être roux, 
             alors qu’une femelle (XX) doit être homozygote (OO). Si elle est hétérozygote (Oo), elle devient 
             « écaille de tortue » (tortie).
         </p>
 
-        <h3>Chats oranges dans la culture populaire</h3>
+        <h2>Chats oranges dans la culture populaire</h2>
         <p>
             Leur couleur vive les a rendus iconiques au cinéma et dans les livres :
         </p>
@@ -117,14 +119,14 @@
         </ul>
 
         <figure>
-            <img src="static/images/article3/chat4.jpg" alt="Garfield, le chat orange célèbre">
+            <img src="static/images/article3/chat4.jpg" alt="Illustration du personnage Garfield mangeant une part de lasagnes.">
             <figcaption class="sr-only">Garfield, l'une des représentations les plus célèbres du chat orange dans la culture populaire.</figcaption>
         </figure>
 
     </article>
 
-    <section class="commentaires" id="commentaires">
-        <h2>Commentaires (3)</h2>
+    <section class="commentaires" id="commentaires" aria-labelledby="titre-commentaires">
+        <h2 id="titre-commentaires">Commentaires (3)</h2>
 
         <div class="commentaire">
             <p class="commentaire-auteur">Julie</p>
@@ -147,11 +149,11 @@
         <form>
             <div class="form-group">
                 <label for="nom">Votre nom :</label>
-                <input type="text" id="nom" name="nom" required>
+                <input type="text" id="nom" name="nom" required autocomplete="name">
             </div>
             <div class="form-group">
-                <label for="commentaire">Votre commentaire :</label>
-                <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Votre commentaire..."></textarea>
+                <label for="commentaire-input">Votre commentaire :</label>
+                <textarea id="commentaire-input" name="commentaire" rows="4" required placeholder="Votre commentaire..."></textarea>
             </div>
             <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
