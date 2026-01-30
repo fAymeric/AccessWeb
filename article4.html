@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 4 - Le Tardigrade</title>
+    <title>Le Tardigrade - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
-
-<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+<nav aria-label="Navigation Rapide">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+    </ul>
+</nav>  
 
 <header>
-    <h1>Mon Blog</h1>
+    <h1>Le Tardigrade</h1>
     <nav aria-label="Navigation principale">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -22,9 +25,8 @@
 
 <main id="contenu">
 
-    <article>
-        <h2>L'Ourson d'eau (Tardigrade)</h2>
-
+    <article id="main-content">
+        <h3>Introduction</h3>
         <p>
             Le tardigrade, surnommé "ourson d'eau" en raison de sa démarche lente et de son corps potelé, 
             est un animal microscopique polyextrémophile. Capable de survivre dans les conditions les plus 
@@ -33,6 +35,7 @@
 
         <figure>
             <img src="static/images/article4/tardigrade1.jpg" alt="Vue au microscope d'un tardigrade">
+            <figcaption class="sr-only">Photographie d'un tardigrade observée au microscope électronique à balayage.</figcaption>
         </figure>
 
         <h3>Un champion de la survie</h3>
@@ -42,8 +45,6 @@
             griffues et un système biologique capable d'entrer en "cryptobiose". Dans cet état de 
             dormance profonde, il remplace l'eau de ses cellules par un sucre protecteur.
         </p>
-
-        
 
         <table>
             <caption>Limites de survie du Tardigrade</caption>
@@ -88,6 +89,7 @@
 
         <figure>
             <img src="static/images/article4/tardigrade2.jpg" alt="Mousse humide sur un rocher">
+            <figcaption class="sr-only">La mousse de forêt est l'un des habitats privilégiés des oursons d'eau.</figcaption>
         </figure>
 
         <h3>Un espoir pour la médecine</h3>
@@ -124,7 +126,7 @@
                 <label for="commentaire">Votre commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
-            <button type="submit" class="btn">Envoyer</button>
+            <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
 

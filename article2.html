@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article – Les Ochotonidés (Pikas)</title>
+    <title>Les Ochotonidés (Pikas) - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
 
-<a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+<nav aria-label="Navigation Rapide">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+    </ul>
+</nav>  
 
 <header>
-    <h1>Mon Blog</h1>
+    <h1>Les Ochotonidés (Pikas)</h1>
     <nav aria-label="Navigation principale">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -22,9 +26,7 @@
 
 <main id="contenu-principal">
 
-    <article>
-        <h2>Les Ochotonidés (Pikas)</h2>
-
+    <article id="main-content">
         <h3>Introduction</h3>
         <p>
             Les Ochotonidés (<em>Ochotonidae</em>) sont une famille de mammifères lagomorphes,
@@ -36,6 +38,7 @@
 
         <figure>
             <img src="static/images/article2/pika1.jpg" alt="Pika dans son habitat montagneux">
+            <figcaption class="sr-only">Un pika surveillant son territoire depuis un poste d'observation en altitude.</figcaption>
         </figure>
 
         <h3>Évolution</h3>
@@ -89,6 +92,7 @@
 
         <figure>
             <img src="static/images/article2/pika2.jpg" alt="Pika dans un tas de pierres">
+            <figcaption class="sr-only">L'habitat rocheux (talus) offre une protection thermique et contre les prédateurs.</figcaption>
         </figure>
 
         <h3>Nourriture</h3>
@@ -113,6 +117,7 @@
 
         <figure>
             <img src="static/images/article2/pika3.jpg" alt="Pika dans un environnement rocheux">
+            <figcaption class="sr-only">Le genre Ochotona regroupe l'ensemble des pikas siffleurs encore existants.</figcaption>
         </figure>
 
         <h3>Écologie</h3>
@@ -125,6 +130,7 @@
 
         <figure>
             <img src="static/images/article2/pika4.jpg" alt="Pika dans un environnement rocheux">
+            <figcaption class="sr-only">Le pika joue un rôle d'ingénieur écosystémique dans les milieux alpins.</figcaption>
         </figure>
 
         <h3>États, pressions et menaces</h3>
@@ -159,6 +165,7 @@
 
         <figure>
             <img src="static/images/article2/pika5.jpg" alt="Pika dans un environnement rocheux">
+            <figcaption class="sr-only">La diversité historique des Ochotonidés était bien plus vaste qu'aujourd'hui.</figcaption>
         </figure>
 
         <h3>Pika dans la culture populaire</h3>
@@ -180,7 +187,7 @@
 
         <div class="commentaire">
             <p class="commentaire-auteur">Jean</p>
-                <time datetime="2026-01-12" class="commentaire-date">12 janvier 2026</time>
+            <time datetime="2026-01-12" class="commentaire-date">12 janvier 2026</time>
             <p class="commentaire-texte">Je ne connaissais pas le rôle écologique des pikas.</p>
         </div>
 
@@ -193,7 +200,7 @@
                 <label for="commentaire">Votre commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
 

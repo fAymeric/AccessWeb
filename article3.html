@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 3 – Les chats oranges : génétique et anecdotes</title>
+    <title>Les chats oranges : génétique et anecdotes - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
 
-<a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+<nav aria-label="Navigation Rapide">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+    </ul>
+</nav>  
 
 <header>
-    <h1>Mon Blog</h1>
+    <h1>Les chats oranges : génétique et anecdotes</h1>
     <nav aria-label="Navigation principale">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -22,9 +26,7 @@
 
 <main id="contenu-principal">
 
-    <article>
-        <h2>Les chats oranges : génétique et légendaire maladresse</h2>
-
+    <article id="main-content">
         <h3>Introduction</h3>
         <p>
             Les chats oranges, aussi appelés « ginger » ou « red », sont célèbres pour leur pelage flamboyant 
@@ -34,6 +36,7 @@
 
         <figure>
             <img src="static/images/article3/chat1.jpg" alt="Chat orange assis sur un canapé">
+            <figcaption class="sr-only">Un chat orange domestique affichant son pelage roux caractéristique.</figcaption>
         </figure>
 
         <h3>Fiche technique et Génétique</h3>
@@ -90,6 +93,7 @@
 
         <figure>
             <img src="static/images/article3/chat5.jpg" alt="Chat orange dans une situation maladroite">
+            <figcaption class="sr-only">Les chats oranges sont souvent les vedettes de vidéos virales pour leur maladresse légendaire.</figcaption>
         </figure>
 
         <h3>Génétique et reproduction</h3>
@@ -111,6 +115,7 @@
 
         <figure>
             <img src="static/images/article3/chat4.jpg" alt="Garfield, le chat orange célèbre">
+            <figcaption class="sr-only">Garfield, l'une des représentations les plus célèbres du chat orange dans la culture populaire.</figcaption>
         </figure>
 
     </article>
@@ -145,7 +150,7 @@
                 <label for="commentaire">Votre commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Votre commentaire..."></textarea>
             </div>
-            <button type="submit" class="btn">Envoyer</button>
+            <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
 

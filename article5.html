@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dossier Scientifique : L'Axolotl - Mon Blog</title>
+    <title>L'Axolotl - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
-
-<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+<nav aria-label="Navigation Rapide">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+    </ul>
+</nav>  
 
 <header>
-    <h1>Mon Blog</h1>
+    <h1>L'Axolotl</h1>
     <nav aria-label="Navigation principale">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -23,8 +26,7 @@
 <main id="contenu">
 
     <article>
-        <h2>L'Axolotl : Le prodige de la biologie mexicaine</h2>
-
+        <h3>Introduction</h3>
         <p>
             L'axolotl (<em>Ambystoma mexicanum</em>) est l'un des organismes les plus fascinants du règne animal. 
             Vénéré par les Aztèques, il est aujourd'hui une pièce maîtresse de la recherche médicale mondiale 
@@ -33,6 +35,7 @@
 
         <figure>
             <img src="static/images/article5/axolotl.png" alt="Gros plan sur l'anatomie d'un axolotl montrant ses branchies">
+            <figcaption class="sr-only">Détail des branchies externes de l'axolotl.</figcaption>
         </figure>
 
         <h3>1. Un pouvoir de régénération sans cicatrice</h3>
@@ -84,6 +87,7 @@
 
         <figure>
             <img src="static/images/article5/axolotl2.jpg" alt="Différentes couleurs d'axolotls : sauvage, leucistique et albinos">
+            <figcaption class="sr-only">Les différentes variations chromatiques observées en captivité.</figcaption>
         </figure>
 
         <h3>3. L'habitat critique de Xochimilco</h3>
@@ -93,7 +97,8 @@
         </p>
 
         <figure>
-            <img src="static/images/article5/axolotl3.jpg"" alt="Canaux de Xochimilco au Mexique, habitat naturel de l'axolotl">
+            <img src="static/images/article5/axolotl3.jpg" alt="Canaux de Xochimilco au Mexique, habitat naturel de l'axolotl">
+            <figcaption class="sr-only">Vue des canaux de Xochimilco, l'habitat naturel de l'espèce.</figcaption>
         </figure>
 
         <h3>4. Synthèse documentaire : Fiche d'identité</h3>
@@ -132,7 +137,7 @@
                 <label for="commentaire">Votre commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
-            <button type="submit" class="btn">Envoyer</button>
+            <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
 

@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1 - Le capybara</title>
+    <title>Le cabiai (capybara) - Mon Blog</title>
     <link rel="stylesheet" href="static/css/article.css">
 </head>
 <body>
 
-<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+<nav aria-label="Navigation Rapide">
+    <ul>
+      <li><a href="#main-content" class="skip-link">Aller au contenu principal</a></li>
+    </ul>
+</nav>  
 
 <header>
-    <h1>Mon Blog</h1>
+    <h1>Le cabiai (capybara)</h1>
     <nav aria-label="Navigation principale">
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -22,9 +26,8 @@
 
 <main id="contenu">
 
-    <article>
-        <h2>Le cabiai (capybara)</h2>
-
+    <article id="main-content">
+        <h3>Introduction</h3>
         <p>
             Le cabiai, plus connu sous le nom de capybara (<em>Hydrochoerus hydrochaeris</em>),
             est un rongeur sud-americain appartenant au groupe des hystricognathes.
@@ -33,6 +36,7 @@
 
         <figure>
             <img src="static/images/article1/capybara1.jpg" alt="Capybara adore">
+            <figcaption class="sr-only">Le capybara est une espèce paisible vivant en Amérique du Sud.</figcaption>
         </figure>
 
         <h3>Un geant parmi les rongeurs</h3>
@@ -83,6 +87,7 @@
 
         <figure>
             <img src="static/images/article1/capybara3.jpg" alt="Capybara debout qui regarde l'appareil photo">
+            <figcaption class="sr-only">Sa morphologie est parfaitement adaptée à la vie semi-aquatique.</figcaption>
         </figure>
 
         <h3>Un mode de vie semi-aquatique</h3>
@@ -100,6 +105,7 @@
 
         <figure>
             <img src="static/images/article1/capybara2.jpg" alt="Photo de la tete d'un capybara qui nous regarde">
+            <figcaption class="sr-only">Gros plan sur la tête d'un capybara montrant ses yeux et oreilles placés haut.</figcaption>
         </figure>
 
         <h3>Une organisation sociale remarquable</h3>
@@ -116,6 +122,7 @@
 
         <figure>
             <img src="static/images/article1/capybara5.jpg" alt="Capybara dans l'eau avec des oranges">
+            <figcaption class="sr-only">Les capybaras apprécient particulièrement les bains prolongés.</figcaption>
         </figure>
 
         <h3>Relations avec l'etre humain</h3>
@@ -128,6 +135,7 @@
 
         <figure>
             <img src="static/images/article1/capybara4.jpg" alt="Capybara mignon qui fait dodo">
+            <figcaption class="sr-only">Le tempérament calme du capybara en fait un animal très apprécié sur Internet.</figcaption>
         </figure>
     </article>
 
@@ -155,7 +163,7 @@
                 <label for="commentaire">Votre commentaire :</label>
                 <textarea id="commentaire" name="commentaire" rows="4" required placeholder="Écrivez votre commentaire..."></textarea>
             </div>
-            <button type="submit">Envoyer</button>
+            <button type="submit" class="btn">Envoyer le commentaire</button>
         </form>
     </section>
 
