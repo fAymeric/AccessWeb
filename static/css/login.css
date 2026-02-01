@@ -160,10 +160,10 @@ main h1 {
 }
 
 form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: var(--color-surface);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -261,7 +261,7 @@ footer {
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .field-hint {
@@ -269,7 +269,56 @@ footer {
     color: var(--color-text-muted);
     margin-top: 4px;
 }
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-wrapper input {
+  margin-bottom: 0; 
+  padding-right: 4.5rem; 
+}
 
+#toggle-password {
+  position: absolute;
+  right: var(--spacing-xs);
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: var(--color-background);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  height: auto;
+  line-height: 1;
+}
+
+#toggle-password:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+#toggle-password:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.field-hint {
+  margin-top: var(--spacing-xs);
+  display: block;
+}
 @media (max-width: 600px) {
   header {
     padding: var(--spacing-md);
