@@ -206,7 +206,7 @@ main h1 {
   transition: color 0.2s ease;
 }
 
-.article-title h3 {
+.article-title h2 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-xs);
