@@ -176,22 +176,20 @@ main {
     outline: 3px solid var(--color-accent);
     outline-offset: 2px;
 }
-/* Modifie ce sélecteur pour qu'il ressemble aux articles */
 .sitemap-list > li > a {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-text); /* Changé de var(--color-primary) à var(--color-text) */
-  font-weight: 500;         /* Changé de 700 à 500 pour être moins gras */
-  font-size: 1.1rem;        /* Légèrement réduit pour s'aligner sur les articles */
+  color: var(--color-text); 
+  font-weight: 500;         
+  font-size: 1.1rem;        
   padding: 5px 0;
   transition: all 0.2s ease;
 }
 
-/* Optionnel : Si tu veux qu'ils gardent le bleu au survol comme les articles */
 .sitemap-list > li > a:hover {
   color: var(--color-primary);
   padding-left: 5px;
-  transform: translateX(0); /* On retire le gros décalage si tu veux de la sobriété */
+  transform: translateX(0); 
 }
 
 footer {
